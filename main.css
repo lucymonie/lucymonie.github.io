@@ -1,0 +1,181 @@
+/*Main styles covered in this section are for regular mobile size 360px plus.
+Smaller phone screens, ipads and desktop screen sizes are handled in media queries below*/
+
+.outer {
+  margin-top: 0;
+}
+
+.welcome {
+  color:white;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 90%;
+  margin-top: 1.75rem;
+  padding-left: 0 !important;
+  margin-left: 1rem;
+  float:left;
+  width: 220px;
+}
+
+.header {
+  height: 15vh;
+  background-color:#F71735;
+}
+
+.fa-bars {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  align-items: center;
+  padding-right: 0 !important;
+  float:center;
+  color: white !important;
+  width: 50px;
+  float:left;
+}
+
+p, span {
+  display:inline-block;
+  padding-left:2rem;
+  color:#F71735;
+  font-family: 'Cutive Mono', monospace;
+  font-weight: bold;
+  font-size: 28px;
+  cursor:pointer;
+}
+
+a {
+  color: gray;
+}
+
+a:hover {
+  color: #41EAD4;
+}
+
+li {
+  font-size:18px;
+}
+
+.about-menu {
+  display:none;
+  z-index: 20;
+  padding-right: 2rem;
+}
+
+.current {
+  display:inline-block;
+}
+
+.current-menu {
+  color:gray;
+}
+
+.display-panel {
+  padding: 2rem 0 0 2rem;
+  margin-top: 2rem;
+  display:inline;
+}
+
+.about-para, .work-para, .projects-para, .resume-para, .contact-para {
+  display: none;
+  font-size: 18px;
+}
+
+.social {
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.codewars {
+  background-color: #E8E9EB;
+  border-radius: 5px;
+  display:inline-block;
+  width:1.25em;
+  height:1.25em;
+  vertical-align: middle;
+  margin-bottom: 7px;
+}
+
+svg {
+  width: 100%;
+  height:auto;
+  fill: #F71735;
+}
+
+a svg:hover #codewars {
+  fill: gray;
+}
+
+.fa {
+  color: #F71735;
+}
+
+.fa:hover {
+  color: gray;
+}
+
+@media only screen and (min-width: 310px) and (max-width: 359px) {
+  .fa-bars {
+    margin-top: 1rem;
+    width: 50px;
+    float:left;
+  }
+  .welcome {
+    font-size: 22px;
+    margin-top: 1.75rem;
+    margin-left: 1rem;
+    float:left;
+    width: 220px;;
+  }
+  .about-menu {
+    display:none;
+    z-index: 20;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .welcome {
+    font-size: 34px;
+    margin-left: 2rem;
+    padding-top: 2rem;
+    width: 100%;
+  }
+  .header {
+    height: 15vh;
+  }
+  .fa-bars {
+    display:none;
+  }
+  .about-menu p, .about-menu span {
+    font-size: 18px;
+    padding-left: 0.5rem;
+    width: 25vw;
+  }
+  .about-menu {
+    border-right: solid 3px #F71735;
+  }
+  .display-panel p, .display-panel span {
+    font-size: 18px;
+    padding-left: 1rem;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .welcome {
+    font-size: 42px;
+    margin-left: 4rem;
+    width: 100%;
+  }
+  .fa-bars {
+    display:none;
+  }
+  .about-menu p, .about-menu span {
+    font-size: 22px;
+    padding-left: 1rem;
+    width: 20vw;
+  }
+  .about-menu {
+    border-right: solid 3px #F71735;
+  }
+
+}
