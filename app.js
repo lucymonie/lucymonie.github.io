@@ -15,6 +15,8 @@ function greet () {
 }
 
 setTimeout(function () {
+  $('.about-para').fadeIn(2000).css({ "display": "inline-block" }).addClass('current');
+  $('.about').css({ "color": "gray"}).addClass('current-menu');
   if (screen.width >= 768) {
     $('.about-menu').fadeIn(2000).css({ "display": "inline-block" });
   }
@@ -30,7 +32,6 @@ $('.hamburger').click(function() {
   }
 });
 
-
 $('.about').click(function () {
   updateCurrent();
   hideDropdown();
@@ -45,22 +46,18 @@ $('.projects').click(function () {
   $('.projects').css({ "color": "gray"}).addClass('current-menu');;
 });
 
-$('.resume').click(function () {
-  updateCurrent();
-  hideDropdown();
-  $('.resume-para').fadeIn(1000).css({ "display": "inline-block" }).addClass('current');
-  $('.resume').css({ "color": "gray"}).addClass('current-menu');;
-});
-
 $('.contact').click(function () {
   updateCurrent();
   hideDropdown();
   $('.contact-para').fadeIn(1000).css({ "display": "inline-block" }).addClass('current');
-  $('.contact').css({ "color": "gray"}).addClass('current-menu');;
+  $('.contact').css({ "color": "gray"}).addClass('current-menu');
+  if (screen.width < 768) {
+    $('.email').hide();
+  }
 });
 
 function updateCurrent () {
-  $('.current-menu').css({ "color": "#00D9C0" }).removeClass('current-menu');
+  $('.current-menu').css({ "color": "#008BF8" }).removeClass('current-menu');
   $('.current').hide().removeClass('current');
 }
 
