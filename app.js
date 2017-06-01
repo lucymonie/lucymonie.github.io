@@ -60,7 +60,7 @@ $('.contact').click(function () {
 });
 
 function updateCurrent () {
-  $('.current-menu').css({ "color": "#F71735" }).removeClass('current-menu');
+  $('.current-menu').css({ "color": "#00D9C0" }).removeClass('current-menu');
   $('.current').hide().removeClass('current');
 }
 

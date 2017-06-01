@@ -1,5 +1,6 @@
 /*Main styles covered in this section are for regular mobile size 360px plus.
 Smaller phone screens, ipads and desktop screen sizes are handled in media queries below*/
+/*Colours: #F71735, #41EAD4, #373F51*/
 
 .outer {
   margin-top: 0;
@@ -20,7 +21,7 @@ Smaller phone screens, ipads and desktop screen sizes are handled in media queri
 
 .header {
   height: 15vh;
-  background-color:#F71735;
+  background-color:#3C4F76;
 }
 
 .fa-bars {
@@ -37,7 +38,7 @@ Smaller phone screens, ipads and desktop screen sizes are handled in media queri
 p, span {
   display:inline-block;
   padding-left:2rem;
-  color:#F71735;
+  color:#3C4F76;
   font-family: 'Cutive Mono', monospace;
   font-weight: bold;
   font-size: 28px;
@@ -45,7 +46,7 @@ p, span {
 }
 
 a {
-  color: gray;
+  color: #41EAD4;
 }
 
 a:hover {
@@ -53,13 +54,19 @@ a:hover {
 }
 
 li {
-  font-size:18px;
+  font-size:14px;
 }
 
 .about-menu {
   display:none;
+  position:absolute;
   z-index: 20;
   padding-right: 2rem;
+  background-color: white;
+}
+
+.about-menu span {
+  color: #00D9C0;
 }
 
 .current {
@@ -67,7 +74,7 @@ li {
 }
 
 .current-menu {
-  color:gray;
+  color:#00D9C0;
 }
 
 .display-panel {
@@ -87,7 +94,7 @@ li {
 }
 
 .codewars {
-  background-color: #E8E9EB;
+  background-color: white;
   border-radius: 5px;
   display:inline-block;
   width:1.25em;
@@ -99,7 +106,7 @@ li {
 svg {
   width: 100%;
   height:auto;
-  fill: #F71735;
+  fill: #00D9C0;
 }
 
 a svg:hover #codewars {
@@ -107,7 +114,7 @@ a svg:hover #codewars {
 }
 
 .fa {
-  color: #F71735;
+  color: #00D9C0;
 }
 
 .fa:hover {
@@ -137,10 +144,12 @@ a svg:hover #codewars {
     font-size: 34px;
     margin-left: 2rem;
     padding-top: 2rem;
-    width: 100%;
+    width: 600px;
   }
   .header {
     height: 15vh;
+    width:100vw;
+    padding-right:0 !important;
   }
   .fa-bars {
     display:none;
@@ -151,13 +160,18 @@ a svg:hover #codewars {
     width: 25vw;
   }
   .about-menu {
-    border-right: solid 3px #F71735;
+    border-right: solid 3px #3C4F76;
   }
   .display-panel p, .display-panel span {
     font-size: 18px;
     padding-left: 1rem;
   }
-
+  .display-panel {
+    margin-top: 1.25rem;
+  }
+  li {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -175,7 +189,10 @@ a svg:hover #codewars {
     width: 20vw;
   }
   .about-menu {
-    border-right: solid 3px #F71735;
+    border-right: solid 3px #3C4F76;
+  }
+  li {
+    font-size: 18px;
   }
 
 }
