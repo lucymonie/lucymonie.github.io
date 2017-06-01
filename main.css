@@ -161,6 +161,8 @@ a svg:hover #codewars {
   }
   .about-menu {
     border-right: solid 3px #3C4F76;
+    position:static;
+    z-index: 0;
   }
   .display-panel p, .display-panel span {
     font-size: 18px;
@@ -190,6 +192,11 @@ a svg:hover #codewars {
   }
   .about-menu {
     border-right: solid 3px #3C4F76;
+    position:static;
+    z-index: 0;
+  }
+  .display-panel {
+    margin-top: 1.5rem;
   }
   li {
     font-size: 18px;
