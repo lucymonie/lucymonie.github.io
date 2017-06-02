@@ -16,7 +16,7 @@ function greet () {
 
 setTimeout(function () {
   $('.about-para').fadeIn(2000).css({ "display": "inline-block" }).addClass('current');
-  $('.about').css({ "color": "gray"}).addClass('current-menu');
+  $('.about').css({ "color": "#3C4F76"}).addClass('current-menu');
   if (screen.width >= 768) {
     $('.about-menu').fadeIn(2000).css({ "display": "inline-block" });
   }
@@ -33,30 +33,30 @@ $('.hamburger').click(function() {
 });
 
 $('.about').click(function () {
-  updateCurrent();
+  removeCurrent();
   hideDropdown();
-  $('.about-para').fadeIn(1000).css({ "display": "inline-block" }).addClass('current');
-  $('.about').css({ "color": "gray"}).addClass('current-menu');
+  showPara($('.about-para'));
+  changeMenuItem($('.about'));
 });
 
 $('.projects').click(function () {
-  updateCurrent();
+  removeCurrent();
   hideDropdown();
-  $('.projects-para').fadeIn(1000).css({ "display": "inline-block" }).addClass('current');
-  $('.projects').css({ "color": "gray"}).addClass('current-menu');;
+  showPara($('.projects-para'));
+  changeMenuItem($('.projects'));
 });
 
 $('.contact').click(function () {
-  updateCurrent();
+  removeCurrent();
   hideDropdown();
-  $('.contact-para').fadeIn(1000).css({ "display": "inline-block" }).addClass('current');
-  $('.contact').css({ "color": "gray"}).addClass('current-menu');
+  showPara($('.contact-para'));
+  changeMenuItem($('.contact'));
   if (screen.width < 768) {
     $('.email').hide();
   }
 });
 
-function updateCurrent () {
+function removeCurrent () {
   $('.current-menu').css({ "color": "#008BF8" }).removeClass('current-menu');
   $('.current').hide().removeClass('current');
 }
@@ -65,4 +65,12 @@ function hideDropdown () {
   if (screen.width < 768) {
     $('.about-menu').hide();
   }
+}
+
+function showPara (para) {
+  para.fadeIn(1000).css({ "display": "inline-block" }).addClass('current');
+}
+
+function changeMenuItem (menuItem) {
+  menuItem.css({ "color": "#3C4F76"}).addClass('current-menu');
 }

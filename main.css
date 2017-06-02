@@ -21,7 +21,7 @@ Smaller phone screens, ipads and desktop screen sizes are handled in media queri
 
 .header {
   height: 15vh;
-  background-color:#008BF8;
+  background-color:#3C4F76;
 }
 
 .fa-bars {
@@ -50,7 +50,7 @@ a {
 }
 
 a:hover {
-  color: gray;
+  color: #E43F6F;
 }
 
 li {
@@ -95,14 +95,13 @@ li {
 
 .social-span {
   font-size: 18px;
-  padding-left: 1.25rem;
-  text-align: center;
+  padding-left: 2rem;
 }
 
 .social {
-  margin-left: 1rem;
   margin-top: 2rem;
-  text-align: center;
+  margin-left: 2rem;
+  /*text-align: center;*/
 }
 
 .codewars {
@@ -122,7 +121,7 @@ svg {
 }
 
 a svg:hover #codewars {
-  fill: gray;
+  fill: #E43F6F;
 }
 
 .fa {
@@ -131,7 +130,7 @@ a svg:hover #codewars {
 }
 
 .fa:hover {
-  color: gray;
+  color: #E43F6F;
 }
 
 @media only screen and (min-width: 310px) and (max-width: 359px) {
@@ -150,10 +149,6 @@ a svg:hover #codewars {
   .about-menu {
     display:none;
     z-index: 20;
-  }
-  .contact-para {
-    padding: 0 0.75rem;
-    text-align: center;
   }
 
 }
